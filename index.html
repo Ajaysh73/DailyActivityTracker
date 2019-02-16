@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>Daily Activity Tracker</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-wrapper purple">
+        <div class="container">
+          <a href="#" class="brand-logo left"> Daily Activity Tracker</a>
+          <ul class="right">
+            <li>
+              <a href="" class="clear-btn btn purple lighten-1"> Clear All</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Form Card -->
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Add Exercise Activity</span>
+
+          <form class="col">
+            <div class="row">
+              <div class="input-field col s6">
+                <input
+                  type="text"
+                  placeholder="Add Participant Name"
+                  id="Participant-name"
+                />
+                <label for="Participant-name">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s4">
+                <input
+                  type="text"
+                  placeholder="Add Activity"
+                  id="activity-name"
+                />
+                <label for="activity-name">Activity</label>
+              </div>
+              <div class="input-field col s4">
+                <input
+                  type="number"
+                  placeholder="Minutes of Avtivity"
+                  id="activity-time"
+                />
+                <label for="activity-time">Activity Time</label>
+              </div>
+              <div class="input-field col s4">
+                <input
+                  type="number"
+                  placeholder="Calories Spent"
+                  id="activity-calories"
+                />
+                <label for="activity-calories">Calories</label>
+              </div>
+              <button class="add-btn btn purple darken-3">
+                <i class="fa fa-plus"></i> Add activity
+              </button>
+              <button class="update-btn btn orange">
+                <i class="fas fa-edit"></i> Update Activity
+              </button>
+              <button class="delete-btn btn red">
+                <i class="fas fa-dumpster"></i>
+                Delete Activity
+              </button>
+              <button class="back-btn btn grey pull-right">
+                <i class="fas fa-undo-alt"></i>
+                Delete Activity
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Calories Count  -->
+      <h3 class="center-align">
+        Total Calories: <span class="total-calories">0</span>
+      </h3>
+
+      <!-- Item List -->
+      <ul id="item-list" class="collection">
+        <li class="collection-item" id="item-0">
+          <strong>Ajay - </strong> <strong>Running:</strong>
+          <strong>25 Minutes</strong>
+          <em>1200 Calories</em>
+          <a href="" class="secondary-content"><i class="fas fa-edit"></i></a>
+        </li>
+        <li class="collection-item" id="item-0">
+          <strong>Ajay - </strong><strong>Swimming:</strong>
+          <strong>15 Minutes</strong>
+          <em>200 Calories</em>
+          <a href="" class="secondary-content"><i class="fas fa-edit"></i></a>
+        </li>
+        <li class="collection-item" id="item-0">
+          <strong>Ajay - </strong><strong>Jogging:</strong>
+          <strong>15 Minutes</strong>
+          <em>500 Calories</em>
+          <a href="" class="secondary-content"><i class="fas fa-edit"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
